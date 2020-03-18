@@ -1,0 +1,102 @@
+html{
+  background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/bass-background-9.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+article{
+  flex: 2;
+  overflow-y: auto;
+}
+
+article a{
+  text-decoration: none;
+  color: inherit;
+}
+
+article a:hover{
+  color: white;
+}
+
+aside{
+  flex: 1;
+  overflow-y: auto;
+}
+
+/*----------------------------------HEADER*/
+
+header{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  min-height: 60px;
+  background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/bass-background-3.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  animation-name: fade;
+  -webkit-animation-name: fade;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+}
+
+@-webkit-keyframes fade{
+  from {opacity:0; filter:Alpha(opacity=0);}
+  to {opacity:1; filter:Alpha(opacity=100);}
+}
+
+@keyframes fade{
+  from {opacity:0; filter:Alpha(opacity=0);}
+  to {opacity:1; filter:Alpha(opacity=100);}
+}
+
+header a{
+  text-decoration: none;
+  color: #72b7c8;
+}
+
+header a:hover{
+  color: white;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li{
+  padding-right: 20px;
+  list-style: none;
+}
+
+/*-------------------FOOTER*/
+
+footer {
+  background-color: #122021;
+  color: white;
+  min-height: 20px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover{
+  color: #72b7c8;
+}
